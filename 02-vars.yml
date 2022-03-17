@@ -77,3 +77,7 @@
     - name: Print OUT Variable
       ansible.builtin.debug:
         msg: "{{OUT.stdout}}"
+
+    - name: Declare a standard variable name
+      ansible.builtin.set_fact:
+        UPTIME_STDOUT: "{{OUT.stdout}}"
