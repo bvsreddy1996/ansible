@@ -36,6 +36,12 @@
 
 # Scope of task variable is only to that task, the other task cannot access the other tasks variables
 
+- name: Variable from Inventory
+  hosts: all
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL == {{URL}}
 
 ## Variable Precedence
 - name: Variable Precedence
