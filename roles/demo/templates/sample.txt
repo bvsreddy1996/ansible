@@ -1,4 +1,4 @@
 --- TEMPLATES ---
-Hello Welcome To Devops Training
+Hello Welcome To {{COURSE}} Training
 
 
