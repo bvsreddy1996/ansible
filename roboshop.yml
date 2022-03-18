@@ -8,6 +8,6 @@
   hosts: MONGODB
   become: yes
   roles:
-    - MongoDB
+    - mongodb
 
 
