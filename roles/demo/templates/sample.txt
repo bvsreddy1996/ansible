@@ -1,2 +1,4 @@
+--- TEMPLATES ---
 Hello Welcome To Devops Training
+
 
