@@ -7,3 +7,9 @@
       loop:
         - Raghu
         - Raju
+    - name: Demo on list Values , Each value is a Map
+      debug:
+        msg: Hello, {{item.name}}, Welcome to {{item.Course}} Training
+      loop:
+        - {name: Raghu, Course: DevOps}
+        - {name: Raju, Course: AWS}
