@@ -5,9 +5,7 @@
 
 - name: Install MySQL Server
   ansible.builtin.yum:
-    name:
-      - mysql-community-server
-      - MySQL-python
+    name: mysql-community-server
     state: installed
 
 - name: Start MySQL Service
@@ -15,3 +13,12 @@
     name: mysqld
     state: started
     enabled: true
+
+- name: Find
+  ansible.builtin.slurp:
+    src: /var/log/mysqld.log
+  register: mysql_output
+
+- name: Print
+  debug:
+    msg: "{{mysql_output}}"
