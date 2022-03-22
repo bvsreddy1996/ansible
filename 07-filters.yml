@@ -6,3 +6,5 @@
     - name: Print a var
       debug:
         msg: "{{sample | upper}}"
+
+
