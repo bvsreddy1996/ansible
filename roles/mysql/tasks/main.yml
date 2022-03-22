@@ -17,9 +17,9 @@
 
 - name: Find
   ansible.builtin.slurp:
-   src: /var/log/mysqld.log
+    src: /var/log/mysqld.log
   register: mysql_output
 
 - name: Print
-   debug:
-     msg: "{[mysql_output}}"
+  debug:
+    msg: "{[mysql_output}}"
