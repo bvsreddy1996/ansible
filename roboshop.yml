@@ -47,11 +47,3 @@
   roles:
     - cart
 
-- name: Setup MySQL Component
-  hosts: MYSQL
-  become: yes
-  tags:
-    - mysql
-  roles:
-    - mysql
-
